@@ -41,7 +41,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btn_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
