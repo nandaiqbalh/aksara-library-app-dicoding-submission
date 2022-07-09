@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AksaraLibrary">
         <activity
+            android:name=".onboarding.OnboardingThreeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onboarding.OnboardingTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onboarding.OnboardingOneActivity"
+            android:exported="true"></activity>
+        <activity
             android:name=".onboarding.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
@@ -20,8 +29,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
