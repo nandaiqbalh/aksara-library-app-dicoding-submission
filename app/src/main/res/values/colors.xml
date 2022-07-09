@@ -13,4 +13,5 @@
     <color name="secondary_color">#B3DDC6</color>
     <color name="cerah_color">#FBF1A3</color>
     <color name="font_color">#7D7D7D</color>
+    <color name="trans">#00000000 </color>
 </resources>
