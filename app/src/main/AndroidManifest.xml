@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AksaraLibrary" >
         <activity
+            android:name=".detail.DetailBookActivity"
+            android:exported="false" />
+        <activity
             android:name=".home.HomeActivity"
             android:exported="false" />
         <activity
