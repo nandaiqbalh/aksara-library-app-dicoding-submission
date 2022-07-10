@@ -107,6 +107,17 @@ class HomeActivity : AppCompatActivity() {
         ))
 
         dataList.add(Book(
+            "Segala-galanya Ambyar",
+            "Apakah kamu merasa kecewa dengan hidupmu? Apakah kamu merasa cemas secara terus-menerus? Apakah kamu merasa bahwa dunia di sekelilingmu buruk dan jahat?\nYa, dunia ini memang kacau, dunia ini memang ambyar, tapi itu karena Anda tidak sadar bahwa harapan Anda terlalu disilaukan oleh keinginan-keinginan Anda sendiri yang tidak masuk akal.",
+            "Mark Mansion",
+            "Gramedia Widiasarana Indonesia",
+            "Nonfiksi, Self Improvement",
+            "Bahasa Indonesia",
+            "368",
+            R.drawable.buku_segalanya_ambyar
+        ))
+
+        dataList.add(Book(
             "Catatan Juang",
             "Catatan Juang adalah buku ketiga karya Fiersa Besari dan merupakan sempalan dari novel sebelumnya yang berjudul Konspirasi Alam Semesta yang dapat kita nikmati secara terpisah. Suar, sang tokoh utama dalam buku ini, adalah seorang karyawan swasta yang melupakan mimpinya hingga menemukan buku sampul merah ini.",
             "Fiersa Besari",
@@ -195,25 +206,16 @@ class HomeActivity : AppCompatActivity() {
         ))
 
         dataList.add(Book(
-            "Bumi Manusia",
-            "Novel Bumi Manusia bercerita tentang perjuangan tokoh Minke memperjuangan kedudukan pribumi melawan diskriminasi Belanda pada masa kolonial Belanda di awal abad keduapuluh. Sebagai anak bupati, Minke bisa bersekolah, dan ia menggunakan pengetahuannya untuk melawan kolonialisme Belanda.",
-            "Pramoedya Ananta Toer",
-            "Hasta Mitra",
-            "Novel, Fiksi Sejarah",
+            "Sebuah Seni untuk Bersikap Bodo Amat",
+            "Selama beberapa tahun belakangan, Mark Manson—melalui blognya yang sangat populer—telah membantu mengoreksi harapan-harapan delusional kita, baik mengenai diri kita sendiri maupun dunia. Ia kini menuangkan buah pikirnya yang keren itu di dalam buku hebat ini.",
+            "Mark Mansion",
+            "Gramedia Widiasarana Indonesia",
+            "Nonfiksi, Self Improvement",
             "Bahasa Indonesia",
-            "535",
-            R.drawable.buku_bumi_manusia
+            "256",
+            R.drawable.buku_bodo_amat
         ))
 
-        dataList.add(Book(
-            "Geez & Ann #3",
-            "Geez kembali dari Berlin dengan kondisi baik dan siap untuk melanjutkan ceritanya dengan Ann. Semua yang Geez kira akan mudah dan indah, ternyata berbeda dengan Ann yang sudah mulai belajar merapikan hidupnya dan memulai cerita baru tanpa Geez sampai ketika Geez kembali hendak menjemput dan membawanya ke Berlin.",
-            "Rintik Sedu",
-            "GagasMedia",
-            "Fiksi",
-            "Bahasa Indonesia",
-            "224",
-            R.drawable.buku_geez3
-        ))
+
     }
 }
