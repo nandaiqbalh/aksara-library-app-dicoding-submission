@@ -14,9 +14,6 @@
 
     >
 
-
-
-
     <androidx.appcompat.widget.Toolbar
 
         android:id="@+id/toolbar"
@@ -33,10 +30,8 @@
 
         android:background="@color/cerah_color"
         app:titleTextColor="@color/main_color"
+        android:textAlignment="center"
 
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
-
-
-
 
 </com.google.android.material.appbar.AppBarLayout>

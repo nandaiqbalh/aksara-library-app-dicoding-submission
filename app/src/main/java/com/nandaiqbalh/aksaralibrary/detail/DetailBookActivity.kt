@@ -1,8 +1,6 @@
 package com.nandaiqbalh.aksaralibrary.detail
 
-import android.graphics.Color
 import android.os.Bundle
-import android.view.Gravity
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity

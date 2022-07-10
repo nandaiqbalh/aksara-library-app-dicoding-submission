@@ -4,7 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.ImageButton
+import android.view.Menu
+import android.view.MenuItem
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.nandaiqbalh.aksaralibrary.R
@@ -15,8 +17,9 @@ import com.nandaiqbalh.aksaralibrary.profile.ProfileActivity
 
 class HomeActivity : AppCompatActivity() {
 
-    private lateinit var btnProfile: ImageButton
     private lateinit var rvBook: RecyclerView
+
+    private lateinit var toolbar: Toolbar
 
     private var dataList = ArrayList<Book>()
 
@@ -27,8 +30,8 @@ class HomeActivity : AppCompatActivity() {
         // init
         init()
 
-        // mainButton
-        mainButton()
+        // atur data
+        aturData()
 
         // add dummy data
         addDummyBook()
@@ -46,19 +49,36 @@ class HomeActivity : AppCompatActivity() {
 
     private fun init(){
 
-        btnProfile = findViewById(R.id.btn_profile)
         rvBook = findViewById(R.id.rv_book)
+
+        toolbar = findViewById(R.id.toolbar)
     }
 
-    private fun mainButton(){
+    private fun aturData(){
 
-        btnProfile.setOnClickListener {
+        // set toolbar
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = "Aksara Library"
+        supportActionBar?.setDisplayShowHomeEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        toolbar.navigationIcon = null
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+
+        menuInflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id = item.itemId
+
+        if (id == R.id.profile){
             val intent = Intent(this@HomeActivity, ProfileActivity::class.java)
             startActivity(intent)
-
         }
-
+        return true
     }
 
     private fun addDummyBook(){
@@ -183,6 +203,17 @@ class HomeActivity : AppCompatActivity() {
             "Bahasa Indonesia",
             "535",
             R.drawable.buku_bumi_manusia
+        ))
+
+        dataList.add(Book(
+            "Geez & Ann #3",
+            "Geez kembali dari Berlin dengan kondisi baik dan siap untuk melanjutkan ceritanya dengan Ann. Semua yang Geez kira akan mudah dan indah, ternyata berbeda dengan Ann yang sudah mulai belajar merapikan hidupnya dan memulai cerita baru tanpa Geez sampai ketika Geez kembali hendak menjemput dan membawanya ke Berlin.",
+            "Rintik Sedu",
+            "GagasMedia",
+            "Fiksi",
+            "Bahasa Indonesia",
+            "224",
+            R.drawable.buku_geez3
         ))
     }
 }

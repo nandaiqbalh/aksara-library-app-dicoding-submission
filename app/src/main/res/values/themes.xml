@@ -17,5 +17,6 @@
     <style name="ToolbarTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:fontFamily">@font/poppins_semibold</item>
         <item name="android:textSize">32sp</item>
+        <item name="android:textAlignment">center</item>
     </style>
 </resources>
