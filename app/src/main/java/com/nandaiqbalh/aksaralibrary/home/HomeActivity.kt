@@ -12,12 +12,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.nandaiqbalh.aksaralibrary.R
 import com.nandaiqbalh.aksaralibrary.detail.DetailBookActivity
 import com.nandaiqbalh.aksaralibrary.helper.BookAdapter
+import com.nandaiqbalh.aksaralibrary.helper.BookAdapterHorizontal
 import com.nandaiqbalh.aksaralibrary.model.Book
 import com.nandaiqbalh.aksaralibrary.profile.ProfileActivity
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var rvBook: RecyclerView
+    private lateinit var rvBookHorizontal: RecyclerView
 
     private lateinit var toolbar: Toolbar
 
@@ -44,12 +46,21 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // horizontal
+        rvBookHorizontal.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        rvBookHorizontal.adapter = BookAdapterHorizontal(dataList){
+            // jika dipencet akan ke halaman detail
+            val intent = Intent(this@HomeActivity, DetailBookActivity::class.java).putExtra("data", it)
+            startActivity(intent)
+        }
+
         Log.d("Jumlah list: ", "${dataList.size}")
     }
 
     private fun init(){
 
         rvBook = findViewById(R.id.rv_book)
+        rvBookHorizontal = findViewById(R.id.rv_book_horizontal)
 
         toolbar = findViewById(R.id.toolbar)
     }
