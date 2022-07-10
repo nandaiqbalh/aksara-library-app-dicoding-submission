@@ -25,13 +25,14 @@
 
         android:layout_height="?attr/actionBarSize"
 
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:theme="@style/ToolbarTheme"
 
         app:contentInsetStartWithNavigation="0dp"
 
         app:paddingEnd="5dp"
 
         android:background="@color/cerah_color"
+        app:titleTextColor="@color/main_color"
 
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
 

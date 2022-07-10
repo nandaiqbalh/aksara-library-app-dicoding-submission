@@ -3,6 +3,7 @@ package com.nandaiqbalh.aksaralibrary.home
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -39,6 +40,8 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this@HomeActivity, DetailBookActivity::class.java).putExtra("data", it)
             startActivity(intent)
         }
+
+        Log.d("Jumlah list: ", "${dataList.size}")
     }
 
     private fun init(){
